@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~  Copyright 2022 VastGui
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +14,21 @@
   ~ limitations under the License.
   -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/delete"
-        android:icon="@drawable/ic_delete"
-        android:title="@string/zh_delete"
-        app:showAsAction="always" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/app_setting"
+            android:title="@string/zh_setting"
+            android:icon="@drawable/ic_setting"
+            android:checkable="true"/>
+    </group>
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/app_about"
+            android:title="@string/zh_about"
+            android:icon="@drawable/ic_about"
+            android:checkable="true"/>
+    </group>
 </menu>

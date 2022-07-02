@@ -10,9 +10,15 @@
         <entry key="..\:/Users/HP/Desktop/NoteBook/app/src/main/res/drawable/search.xml" value="0.2785" />
         <entry key="..\:/Users/HP/Desktop/NoteBook/app/src/main/res/layout-v21/setting.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/HP/Desktop/NoteBook/app/src/main/res/layout/setting.xml" value="0.1" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable-v21/preference_background.xml" value="0.128" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/delete_all.xml" value="0.243" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/edit_delete.xml" value="0.239" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_about.xml" value="0.128" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_add.xml" value="0.2505" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_author.xml" value="0.2505" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_delete.xml" value="0.223" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_github.xml" value="0.2505" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_license.xml" value="0.2505" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_note_date.xml" value="0.243" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_reset.xml" value="0.243" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_save.xml" value="0.243" />
@@ -22,7 +28,9 @@
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/ic_time.xml" value="0.1915" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/img_setting.xml" value="0.239" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/menu.xml" value="0.243" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/preference_background.xml" value="0.1745" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/drawable/search.xml" value="0.239" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/activity_about.xml" value="0.2180921052631579" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/activity_bottom.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/activity_edit.xml" value="0.22" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/activity_main.xml" value="0.10998672859986729" />
@@ -31,8 +39,10 @@
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/activity_welcome.xml" value="0.10810810810810811" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/edit_layout.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/header_navigation_drawer.xml" value="0.22398648648648647" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/image_frame.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/layout_note.xml" value="0.15027322404371585" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/note_layout.xml" value="0.22398648648648647" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/preference_material.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/recycler_note.xml" value="0.25" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/setting.xml" value="0.18" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/setting_cover.xml" value="0.15027322404371585" />
@@ -40,9 +50,12 @@
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/tag_layout.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/todo_layout.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/layout/xml.xml" value="0.2233108108108108" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/menu/menu_edit.xml" value="0.22398648648648647" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/menu/menu_main.xml" value="0.22398648648648647" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/menu/menu_nav.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.243" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.243" />
-        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/xml/preferences_setting.xml" value="0.1" />
+        <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/xml/preferences_setting.xml" value="0.33" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/MaterialNotes/app/src/main/res/xml/root_preferences.xml" value="0.22398648648648647" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/NoteBook/app/src/main/res/drawable/delete_all.xml" value="0.284" />
         <entry key="..\:/WorkSpace/GitSpaceAndroid/NoteBook/app/src/main/res/drawable/edit_delete.xml" value="0.243" />

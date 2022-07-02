@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~  Copyright 2022 VastGui
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +14,14 @@
   ~ limitations under the License.
   -->
 
-<resources>
-
-</resources>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#3c6a1c">
+    <item
+        android:left="8dp"
+        android:right="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+</ripple>
