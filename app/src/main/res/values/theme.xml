@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialNotes" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#3c6a1c</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorContainer">#bbf294</item>
+        <item name="colorOnContainer">#0a2100</item>
+        <item name="colorSurface">#b8e994</item>
+        <item name="colorSecondary">#536500</item>
+        <item name="colorOnSecondary">#ffffff</item>
+        <item name="colorSecondaryContainer">#d5ed7e</item>
+        <item name="colorOnSecondaryContainer">#171e00</item>
+        <item name="colorTertiary">#00629e</item>
+        <item name="colorOnTertiary">#ffffff</item>
+        <item name="colorTertiaryContainer">#cfe5ff</item>
+        <item name="colorOnTertiaryContainer">#001d34</item>
+    </style>
+
+    <style name="MaterialNotes.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#bbf294</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/MaterialNotes</item>
+    </style>
+
+    <style name="MaterialNotes.PreferenceScreen" parent="@style/PreferenceThemeOverlay">
+        <item name="colorAccent">#ff008577</item>
+        <item name="editTextPreferenceStyle">@style/Preference.DialogPreference.EditTextPreference</item>
+    </style>
+
+</resources>
