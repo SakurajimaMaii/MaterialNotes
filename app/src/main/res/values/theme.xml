@@ -17,32 +17,40 @@
 
 <resources>
     <style name="MaterialNotes" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">#3c6a1c</item>
+        <item name="colorPrimary">#0060A9</item>
         <item name="colorOnPrimary">#ffffff</item>
-        <item name="colorContainer">#bbf294</item>
-        <item name="colorOnContainer">#0a2100</item>
-        <item name="colorSurface">#b8e994</item>
-        <item name="colorSecondary">#536500</item>
+        <item name="colorPrimaryContainer">#D3E4FF</item>
+        <item name="colorOnPrimaryContainer">#001C38</item>
+        <item name="colorSecondary">#505F76</item>
         <item name="colorOnSecondary">#ffffff</item>
-        <item name="colorSecondaryContainer">#d5ed7e</item>
-        <item name="colorOnSecondaryContainer">#171e00</item>
-        <item name="colorTertiary">#00629e</item>
+        <item name="colorSecondaryContainer">#D3E4FE</item>
+        <item name="colorOnSecondaryContainer">#0B1C30</item>
+        <item name="colorTertiary">#70547F</item>
         <item name="colorOnTertiary">#ffffff</item>
-        <item name="colorTertiaryContainer">#cfe5ff</item>
-        <item name="colorOnTertiaryContainer">#001d34</item>
-        <item name="colorAccent">@color/app_primary</item>
-        <item name="colorControlHighlight">@color/app_primary</item>
+        <item name="colorTertiaryContainer">#F4D9FF</item>
+        <item name="colorOnTertiaryContainer">#291037</item>
+        <item name="colorError">#BA1A1A</item>
+        <item name="colorOnError">#ffffff</item>
+        <item name="colorErrorContainer">#FFDAD6</item>
+        <item name="colorOnErrorContainer">#410002</item>
+        <item name="android:colorBackground">#FDFCFF</item>
+        <item name="colorOnBackground">#1A1C1E</item>
+        <item name="colorSurface">#D9E5F3</item>
+        <item name="colorOnSurface">#1A1C1E</item>
+        <item name="colorSurfaceVariant">#DFE2EB</item>
+        <item name="colorOnSurfaceVariant">#43474E</item>
+        <item name="colorOutline">#73777F</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <!-- alertDialog样式设计 -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+        <item name="dialogCornerRadius">28dp</item>
     </style>
 
     <style name="MaterialNotes.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#bbf294</item>
+        <item name="windowSplashScreenBackground">#D9E5F3</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
         <item name="windowSplashScreenAnimationDuration">2000</item>
         <item name="postSplashScreenTheme">@style/MaterialNotes</item>
-    </style>
-
-    <style name="MaterialNotes.PreferenceScreen" parent="@style/PreferenceThemeOverlay">
-        <item name="android:colorControlHighlight">@color/app_primary</item>
     </style>
 
 </resources>

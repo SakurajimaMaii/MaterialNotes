@@ -30,7 +30,6 @@
         app:title="@string/zh_about" />
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/Widget.Material3.CardView.Outlined"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
@@ -38,7 +37,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?colorOnTertiary"
             android:orientation="vertical"
             android:padding="5dp">
 
@@ -87,7 +85,6 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/Widget.Material3.CardView.Outlined"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
@@ -95,7 +92,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?colorOnTertiary"
             android:orientation="vertical"
             android:padding="5dp">
 
