@@ -30,6 +30,8 @@ import com.gcode.vasttools.utils.DateUtils
 import com.gcode.vasttools.utils.ToastUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.gcode.materialnotes.databinding.ActivityEditBinding
+import com.gcode.vasttools.utils.FileUtils
+import java.io.File
 import java.io.FileOutputStream
 import java.io.FileWriter
 
@@ -86,37 +88,45 @@ class EditActivity : VastVbActivity<ActivityEditBinding>() {
             }
         }
 
-        //设置保存的监听事件
-        mBinding.saveNote.setOnClickListener {
-            val strInfo = mBinding.noteInfo.text.toString()
-            save(strInfo)
-        }
-
-        //设置分享的监听事件
-        mBinding.shareNote.setOnClickListener {
-            shareMsg() //分享
-        }
-
-        //设置重置的监听事件
-        mBinding.resetNote.setOnClickListener {
-            var fos: FileOutputStream? = null
-            mBinding.noteInfo.hint = ""
-            try {
-                fos = openFileOutput("txt", MODE_PRIVATE)
-                val text = ""
-                fos.write(text.toByteArray())
-            } catch (e: Exception) {
-                e.printStackTrace()
-            } finally {
-                try {
-                    if (fos != null) {
-                        fos.flush()
-                        Toast.makeText(this@EditActivity, "清空成功！", Toast.LENGTH_SHORT).show()
-                        fos.close()
-                    }
-                } catch (e: Exception) {
-                    e.printStackTrace()
+        mBinding.bottomNavigationView.setOnItemSelectedListener {
+            when(it.itemId){
+                //设置保存的监听事件
+                R.id.note_save -> {
+                    val strInfo = mBinding.noteInfo.text.toString()
+                    save(strInfo)
+                    true
                 }
+
+                //设置分享的监听事件
+                R.id.note_share -> {
+                    shareMsg() //分享
+                    true
+                }
+
+                //设置重置的监听事件
+                R.id.note_reset -> {
+                    var fos: FileOutputStream? = null
+                    mBinding.noteInfo.hint = ""
+                    try {
+                        fos = openFileOutput("txt", MODE_PRIVATE)
+                        val text = ""
+                        fos.write(text.toByteArray())
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    } finally {
+                        try {
+                            if (fos != null) {
+                                fos.flush()
+                                Toast.makeText(this@EditActivity, "清空成功！", Toast.LENGTH_SHORT).show()
+                                fos.close()
+                            }
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
+                    }
+                    true
+                }
+                else-> false
             }
         }
     }
@@ -206,15 +216,13 @@ class EditActivity : VastVbActivity<ActivityEditBinding>() {
             DateUtils.currentTime + text
         }
 
-        com.gcode.vasttools.utils.FileUtils.saveFile(
-            com.gcode.vasttools.utils.FileUtils.appInternalFilesDir().path,
-            saveFileName,
-            object :com.gcode.vasttools.utils.FileUtils.WriteEventListener{
-                override fun writeEvent(fileWriter: FileWriter) {
-                    fileWriter.write(text)
-                }
-            })
-
+        val file = File(FileUtils.appInternalFilesDir().path,saveFileName)
+        FileUtils.saveFile(file)
+        FileUtils.writeFile(file,object :com.gcode.vasttools.utils.FileUtils.WriteEventListener{
+            override fun writeEvent(fileWriter: FileWriter) {
+                fileWriter.write(text)
+            }
+        })
     }
 
     //设置“分享”函数

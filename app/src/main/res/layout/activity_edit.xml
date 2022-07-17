@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~  Copyright 2022 VastGui
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,71 +24,37 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
+        style="@style/Widget.Material3.Toolbar.Surface"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="@string/app_name"
-        app:menu="@menu/menu_edit"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/Widget.Material3.Toolbar.Surface"/>
+        app:menu="@menu/menu_edit"
+        app:title="@string/app_name" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/noteInfo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@null"
         android:gravity="start"
         android:hint="@string/zh_note_info_hint"
-        android:textColor="#070507"
+        android:padding="5dp"
         android:textSize="20sp"
-        android:padding="5dp"/>
+        android:background="@null"/>
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/noteTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:layout_margin="10dp"
         android:drawableStart="@drawable/ic_time"
-        android:textSize="15sp"
-        android:layout_margin="10dp"/>
+        android:textSize="15sp" />
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="?colorSurface"
-        android:padding="10dp">
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/saveNote"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/zh_save"
-            android:drawableTop="@drawable/ic_save"
-            android:gravity="center"
-            android:textSize="15sp"/>
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/shareNote"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/zh_share"
-            android:drawableTop="@drawable/ic_share"
-            android:gravity="center"
-            android:textSize="15sp"/>
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/resetNote"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/zh_reset"
-            android:drawableTop="@drawable/ic_reset"
-            android:gravity="center"
-            android:textSize="15sp" />
-    </LinearLayout>
-
+        app:menu="@menu/menu_edit_bottom"/>
 
 </LinearLayout>

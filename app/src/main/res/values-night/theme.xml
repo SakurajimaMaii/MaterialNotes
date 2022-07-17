@@ -40,7 +40,7 @@
         <item name="colorSurfaceVariant">#43474E</item>
         <item name="colorOnSurfaceVariant">#C3C6CF</item>
         <item name="colorOutline">#8D9199</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="colorAccent">?colorOnSurface</item>
         <!-- alertDialog样式设计 -->
         <item name="alertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
         <item name="dialogCornerRadius">28dp</item>

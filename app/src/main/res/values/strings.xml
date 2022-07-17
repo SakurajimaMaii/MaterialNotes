@@ -16,6 +16,7 @@
 
 <resources>
     <string name="app_name">质感笔记</string>
+    <string name="zh_welcome_use">欢迎使用质感笔记</string>
     <string name="zh_search">查找</string>
     <string name="zh_delete">删除</string>
     <string name="zh_welcome">欢迎</string>

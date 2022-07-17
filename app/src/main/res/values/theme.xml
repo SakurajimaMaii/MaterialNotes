@@ -40,17 +40,23 @@
         <item name="colorSurfaceVariant">#DFE2EB</item>
         <item name="colorOnSurfaceVariant">#43474E</item>
         <item name="colorOutline">#73777F</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="colorAccent">?colorOnSurface</item>
         <!-- alertDialog样式设计 -->
-        <item name="alertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+        <item name="alertDialogTheme">@style/MaterialNotes.AlertDialog</item>
         <item name="dialogCornerRadius">28dp</item>
     </style>
 
+    <!-- 启动页面的样式 -->
     <style name="MaterialNotes.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#D9E5F3</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
         <item name="windowSplashScreenAnimationDuration">2000</item>
         <item name="postSplashScreenTheme">@style/MaterialNotes</item>
+    </style>
+
+    <!-- AlertDialog样式设计 -->
+    <style name="MaterialNotes.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+
     </style>
 
 </resources>
