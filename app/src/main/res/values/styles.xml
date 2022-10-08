@@ -16,4 +16,28 @@
 
 <resources>
 
+    <!-- 启动页面的样式 -->
+    <style name="MaterialNotes.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#D9E5F3</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/MaterialNotes</item>
+    </style>
+
+    <!-- AlertDialog样式设计 -->
+    <style name="MaterialNotes.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialNotes.AlertDialog.Title</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialNotes.AlertDialog.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialNotes.AlertDialog.Button</item>
+    </style>
+
+    <!-- AlertDialog Button设计 -->
+    <style name="MaterialNotes.AlertDialog.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <!-- AlertDialog Title设计 -->
+    <style name="MaterialNotes.AlertDialog.Title" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+    </style>
 </resources>

@@ -1,62 +1,71 @@
+import cn.govast.plugin.version.*
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-kapt")
     id("org.jetbrains.kotlin.android")
+    id("cn.govast.plugin.version")
 }
 
 android {
-    compileSdk = Versions.compile_sdk_version
-    buildToolsVersion = Versions.build_tools_version
+    compileSdk = Version.compile_sdk_version
+    buildToolsVersion = Version.build_tools_version
 
     defaultConfig {
         applicationId = "com.gcode.materialnotes"
-        minSdk = Versions.min_sdk_version
-        targetSdk = Versions.target_sdk_version
-        versionCode = Versions.version_code
-        versionName = Versions.version_name
+        minSdk = Version.min_sdk_version
+        targetSdk = Version.target_sdk_version
+        versionCode = 1
+        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments(mapOf("room.schemaLocation" to "$projectDir/schemas".toString()))
+            }
+        }
     }
+    
     buildTypes {
         release {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     buildFeatures {
         viewBinding = true
         dataBinding = true
     }
+
+    namespace = "com.gcode.materialnotes"
+
+    sourceSets["main"].java.srcDir("src/main/kotlin")
 }
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
-    // 自定义工具类
-    implementation(files("libs/VastTools_0.0.9_Cancey.jar"))
-    // 自定义适配器
-    implementation(files("libs/VastAdapter_0.0.6_Cancey.jar"))
-    // 换肤框架
-    implementation(files("libs/VastSkin_0.0.1_Cancey.jar"))
-    implementation(Deps.dependencies_activity_ktx)
-    implementation(Deps.dependencies_appcompat)
-    implementation(Deps.dependencies_constraintlayout)
-    implementation(Deps.dependencies_core_ktx)
-    implementation(Deps.dependencies_core_splashscreen)
-    implementation(Deps.dependencies_kotlin_coroutines_android)
-    implementation(Deps.dependencies_lifecycle_livedata_ktx)
-    implementation(Deps.dependencies_lifecycle_runtime_ktx)
-    implementation(Deps.dependencies_lifecycle_viewmodel_ktx)
-    implementation(Deps.dependencies_material)
-    implementation(Deps.dependencies_preference_ktx)
-    implementation(Deps.dependencies_room_ktx)
-    implementation(Deps.dependencies_room_runtime)
-    annotationProcessor(Deps.dependencies_room_compiler)
-    androidTestImplementation(Deps.dependencies_ext_junit)
-    androidTestImplementation(Deps.dependencies_espresso_core)
-    testImplementation(Deps.dependencies_junit)
-    kapt(Deps.dependencies_room_compiler)
+    implementation(AndroidX.activity_ktx)
+    implementation(AndroidX.appcompat)
+    implementation(AndroidX.constraintlayout)
+    implementation(AndroidX.core_ktx)
+    implementation(AndroidX.core_splashscreen)
+    implementation(Jetbrains.kotlinx_coroutines_android)
+    implementation(AndroidX.lifecycle_livedata_ktx)
+    implementation(AndroidX.lifecycle_runtime_ktx)
+    implementation(AndroidX.lifecycle_viewmodel_ktx)
+    implementation(Google.material)
+    implementation(AndroidX.preference_ktx)
+    implementation(AndroidX.room_ktx)
+    implementation(AndroidX.room_runtime)
+    annotationProcessor(AndroidX.room_compiler)
+    androidTestImplementation(Libraries.junit)
+    androidTestImplementation(AndroidX.espresso_core)
+    kapt(AndroidX.room_compiler)
 }
